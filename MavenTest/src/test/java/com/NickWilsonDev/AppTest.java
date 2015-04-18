@@ -3,6 +3,9 @@ package com.NickWilsonDev;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import junit.framework.Assert;
+
+
 
 /**
  * Unit test for simple App.
@@ -33,5 +36,15 @@ public class AppTest extends TestCase
     public void testApp()
     {
         assertTrue( true );
+    }
+
+    //@Test
+    public void testPrintHelloWorld() {
+        Assert.assertEquals(App.getHelloWorld(), "Hello World");
+    }
+
+    //@Test
+    public void testPrintHelloWorld2() {
+        Assert.assertEquals(App.getHelloWorld2(), "Hello World 222");
     }
 }
